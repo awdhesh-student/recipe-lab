@@ -12,6 +12,7 @@ import {
    Paper,
    Divider,
    Tooltip,
+   Box
 } from '@mui/material';
 import { ArrowUpward, ArrowDownward, Delete } from '@mui/icons-material';
 

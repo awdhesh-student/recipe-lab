@@ -134,13 +134,13 @@ export default function CookSession() {
             </div>
 
             <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-               {!session && <Button className="start-btn" startIcon={<PlayArrowIcon />} variant="contained" onClick={handleStart}>Start Session</Button>}
+               {!session && <Button className="add-btn" startIcon={<PlayArrowIcon />} variant="contained" onClick={handleStart}>Start Session</Button>}
                {session && (
                   <>
-                     <Button variant="outlined" startIcon={session.isRunning ? <PauseIcon /> : <PlayArrowIcon />} onClick={handlePauseResume}>
+                     <Button className="add-btn" variant="outlined" startIcon={session.isRunning ? <PauseIcon /> : <PlayArrowIcon />} onClick={handlePauseResume}>
                         {session.isRunning ? 'Pause' : 'Resume'}
                      </Button>
-                     <Button color="error" variant="contained" startIcon={<StopIcon />} onClick={handleStop}>STOP</Button>
+                     <Button className="add-btn" variant="contained" startIcon={<StopIcon />} onClick={handleStop}>STOP</Button>
                   </>
                )}
             </div>

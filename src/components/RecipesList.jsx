@@ -154,6 +154,7 @@ export default function RecipesList() {
                               <MoreVertIcon />
                            </IconButton>
                         </Tooltip>
+
                      </div>
 
                      <div className="title">{r.title}</div>
